@@ -1,0 +1,21 @@
+{
+  "name": "md-filelinks-validator",
+  "version": "1.0.0",
+  "description": "Validador de links contidos em arquivos .md",
+  "keywords": ["markdown", "URL", ".md", "files"],
+  "main": "./src/cli.js",
+  "author": "Eduardo Castro <edusilva.dev@gmail.com>",
+  "bin": {
+    "md-filelinks-validator": "./src/cli.js"
+  },
+  "type": "module",
+  "scripts": {
+    "cli": "node ./src/cli.js",
+    "cli:validate-links": "node ./src/cli.js --path ./arquivos --validate-links"
+  },
+  "license": "ISC",
+  "preferGlobal": true,
+  "dependencies": {
+    "chalk": "5.0.1"
+  }
+}
